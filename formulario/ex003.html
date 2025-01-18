@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" placeholder="Nome completo" required maxlength="30" autocomplete="nome">
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" placeholder="0 a 10" min="0" max="10" step="0.01" required>
+        </p>
+        <p>
+            <label for="idata">Data</label>
+            <input type="date" name="data" id="idata" value="">
+        </p>
+        <p>
+            <label for="ihora">Horário</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        let input_data = document.getElementById('idata')
+        let data = new Date
+        let day = String(data.getDate()).padStart(2,'0') 
+        let month = String(data.getMonth()+1).padStart(2,'0') 
+        let year = data.getFullYear()   
+
+        input_data.value = `${year}-${month}-${day}`
+
+    </script>
+
+</body>
+</html>
