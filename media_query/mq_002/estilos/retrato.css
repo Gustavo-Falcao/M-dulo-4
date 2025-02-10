@@ -1,0 +1,5 @@
+/* Orientação: RETRATO */
+body {
+    background :url(../imagens/cev-portrait.jpg) center bottom no-repeat fixed;
+    background-size: contain;
+}
