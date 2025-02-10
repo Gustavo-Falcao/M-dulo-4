@@ -1,0 +1,40 @@
+@media screen and (min-width: 768px) {
+    div#menu {
+        display: none;
+    }
+
+    menu#opcoes {
+        display: block;
+        text-align: center;
+    }
+
+    menu > div {
+        display: inline-block;
+        border-radius: 3px 3px 0px 0px;
+    }
+
+    menu > div:hover {
+        background-color: rgb(131, 130, 130);
+    }
+
+    main {
+        max-width: 690px;
+    }
+
+}
+
+@media screen and (orientation: landscape) {
+    div#menu {
+        display: none;
+    }
+
+    menu#opcoes {
+        display: block;
+        text-align: center;
+    }
+
+    menu > div {
+        display: inline-block;
+        border-radius: 3px 3px 0px 0px;
+    }
+}
